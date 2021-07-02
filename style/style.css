@@ -82,12 +82,37 @@ body {
     cursor: pointer;
 }
 
+.card_style {
+    width: 18rem;
+    background-color: #000;
+}
+
+.card-body_style {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card-body .col-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_cards a {
+    color: #000;
+    font-size: 29px;
+}
+
+.about_cards a:hover {
+    color: #fcb606;
+}
+
 
 /* for ipad, tablet, laptop & pc screens */
 
 @media (min-width: 768px) {
     .hero {
-        margin-top: 45px;
+        margin-top: 65px;
     }
     .home_text {
         margin-top: 30%;
@@ -110,6 +135,10 @@ body {
         filter: grayscale(0);
     }
     #video {
-        padding: 15vh 15vw;
+        padding: 3vh 15vw;
+    }
+    .about_cards {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
