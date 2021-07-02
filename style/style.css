@@ -13,6 +13,10 @@ body {
     background: #000;
 }
 
+.section_gap {
+    height: 100px;
+}
+
 .container {
     max-width: 100%;
     padding: 0px 20px;
@@ -82,9 +86,6 @@ body {
 /* for ipad, tablet, laptop & pc screens */
 
 @media (min-width: 768px) {
-    .section_gap {
-        height: 100px;
-    }
     .hero {
         margin-top: 45px;
     }
@@ -107,5 +108,8 @@ body {
     }
     .column img:hover {
         filter: grayscale(0);
+    }
+    #video {
+        padding: 15vh 15vw;
     }
 }
