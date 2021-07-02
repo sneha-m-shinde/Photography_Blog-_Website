@@ -1,4 +1,111 @@
-.home {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #000;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
     background-image: url(/Img/Home_BG.png);
-    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.home_text {
+    margin-top: 35%;
+    margin-bottom: 10%;
+    font-size: 50px;
+    color: #FFD23C;
+    -webkit-text-stroke: 0.3vw;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.group_image {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.show-more-btn {
+    margin: 30px 0;
+}
+
+.button_primary {
+    background-image: linear-gradient(to right, #fcb606 25%, #e7bf58 50%, #FFEAB5 75%, #fff 100%);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* for ipad, tablet, laptop & pc screens */
+
+@media (min-width: 768px) {
+    .section_gap {
+        height: 100px;
+    }
+    .hero {
+        margin-top: 45px;
+    }
+    .home_text {
+        margin-top: 30%;
+        margin-left: 25%;
+        font-size: 90px;
+    }
+    .group_image {
+        width: 100%;
+        height: 100%;
+    }
+    #gallery {
+        margin: 0 5%;
+    }
+    .column img {
+        filter: grayscale(1) brightness(0.5);
+        cursor: pointer;
+        transition: 0.3s linear;
+    }
+    .column img:hover {
+        filter: grayscale(0);
+    }
 }
