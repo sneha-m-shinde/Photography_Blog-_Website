@@ -138,6 +138,7 @@
         <!--ABOUT SECTION-->
         <section id="team">
             <div class="section_gap"></div>
+            <h2 class="text-light text-center py-5">Our Talented Team</h2>
             <div class="container about_cards">
                 <!--card 1-->
                 <div class="card card_style">
@@ -206,22 +207,26 @@
         <section id="contact">
             <div class="section_gap"></div>
             <div class="container text-light">
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-md-5 text-center">
-                        <h2 class="h3"><strong>Hire</strong></h2>
-                        <h1 class="h2"><strong>Us</strong></h1>
+                        <h2 class="hire_text"><strong>Hire Us</strong></h2>
+                        <p class="text-muted hire_paragraph" style="font-size: 12px;">
+                            Fill the form and we'll get back to you <br /> and don't forget to <strong>Smile😊.</strong>
+                        </p>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 d-flex align-items-center">
                         <form>
                             <div class="row">
                                 <div class="col">
                                     <div class="form-group">
-                                        <label for="firstname">First Name</label> <input type="text" class="form-control" id="firstname">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="Nicolaus">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <label for="lastname">Last Name</label> <input type="text" class="form-control" id="lastname">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="Willson">
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +234,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="email">E-mail</label>
-                                        <input class="form-control" id="email">
+                                        <input class="form-control" id="email" placeholder="example@mail.com">
                                     </div>
                                 </div>
                             </div>
@@ -237,40 +242,77 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="city">City</label> <input type="text" class="form-control" id="city">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="New York">
                                     </div>
                                 </div>
+
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="dropdown">State</label>
-                                        <select name="State" class="form-control" id="dropdown">
-                                            <option value="maharashtra">Maharashtra</option>
-                                            <option value="gujarat">Gujarat</option>
-                                            <option value="madhyapradesh">Madhya Pradesh</option>
-                                            <option value="chhattisgarh">Chhattisgarh</option>
-                                            <option value="telangana">Telangana</option>
-                                            <option value="karnataka">Karnataka</option>
-                                            <option value="goa">Goa</option>
+                                        <label for="zip">Zip</label>
+                                        <input type="number" class="form-control" id="zip" placeholder="Ex.: 11104">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="dropdown">Hire For</label>
+                                        <select name="hire" class="form-control" id="dropdown">
+                                            <option value="select" selected disabled>Select Option</option>
+                                            <option value="Photoshoot">Photoshoot</option>
+                                            <option value="advertising">Advertising</option>
+                                            <option value="music">Music Clips</option>
+                                            <option value="events">Events</option>
+                                            <option value="corporate">Corporate Videos</option>
+                                            <option value="sports">Sports Video</option>
+                                            <option value="wedding">Wedding</option>
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="zip">Zip</label> <input type="number" class="form-control" id="zip">
-                                    </div>
-                                </div>
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn">Submit</button>
+                                <button type="button" class="btn button_primary mt-3 ">Hire Request</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div class="section_gap"></div>
         </section>
-        <div class="section_gap"></div>
 
+        <!--Footer-->
+        <footer>
+            <div class="footerwrap">
+                <div class="container">
+                    <div class="py-3">
+                        <div class="row foot_block">
+                            <div class="foot-col col-md-4">
+                                <img src="/Img/Aries_LOGO.png" width="120" height="115">
+                            </div>
+                            <div class="foot-col col-md-4 text-light">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-pinterest"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="foot-col col-md-4">
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms and conditions</a></li>
+                                    <li><a href="#">License Agreement</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="background-color: #ffd364;">
+                    <span style="font-size: smaller;">Copyright 2021, @Aries Studio</span>
+                </div>
+            </div>
+        </footer>
     </main>
 
 
